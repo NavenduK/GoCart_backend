@@ -1,11 +1,10 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node dist/server.js",
-    "dev": "nodemon server.ts",
-    "build": "tsc",
+    "start" :  "node ./dist/server.js",
+    "build": "tsc && cp -r utils/email dist/utils/email",
     "serve": "node ./dist/server.js"
   },
   "keywords": [],
@@ -41,7 +40,6 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@vercel/node": "^3.2.12",
     "bcrypt": "^5.1.1",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.4",
