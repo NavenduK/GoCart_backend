@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 
 const JWT_SECRET: string = process.env.JWT_SECRET!;
-const JWT_EXPIRES_IN: string = process.env.JWT_EXPIRES_IN;
+const JWT_EXPIRES_IN: string = process.env.JWT_EXPIRES_IN || '1h';
 
 const signToken = (id: string) => {
   return jwt.sign({ id }, JWT_SECRET, {

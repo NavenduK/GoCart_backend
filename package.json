@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.ts",
-    "build": "tsc && cp -r utils/email dist/utils/email",
+    "build": "tsc",
     "serve": "node ./dist/server.js"
   },
   "keywords": [],
@@ -40,6 +40,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@vercel/node": "^3.2.12",
     "bcrypt": "^5.1.1",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.4",
