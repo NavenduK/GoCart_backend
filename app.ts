@@ -29,9 +29,6 @@ app.use(cookieParser());
 
 // Implement CORS
 const allowedOrigin = process.env.CLIENT_DOMAIN;
-app.get('/api', (req, res) => {
-  res.send('Welcome');
-});
 app.use(
   cors({
     origin: function (origin, callback) {

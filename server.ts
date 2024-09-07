@@ -26,6 +26,11 @@ mongoose
 
 // 2) SERVER
 const port = +process.env.PORT!;
+
+
+app.get('/', (req, res) => {
+  res.send('Hello from Vercel!');
+});
 app.listen(port, () => {
   console.log(`App is running on port ${port}`);
 });

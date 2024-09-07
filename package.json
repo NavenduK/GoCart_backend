@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.ts",
+    "start": "nodemon server.ts",
     "build": "tsc && cp -r utils/email dist/utils/email",
     "serve": "node ./dist/server.js"
   },
@@ -52,6 +52,7 @@
     "helmet": "^7.1.0",
     "hpp": "^0.2.3",
     "html-to-text": "^9.0.5",
+    "http": "^0.0.1-security",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.1",
