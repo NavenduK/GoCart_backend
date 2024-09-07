@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start" :  "node ./dist/server.js",
-    "build": "tsc && cp -r utils/email dist/utils/email",
+    "start" : "node ./dist/server.js",
+    "dev": "nodemon server.ts",
+    "build": "tsc",
     "serve": "node ./dist/server.js"
   },
   "keywords": [],
