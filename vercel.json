@@ -8,12 +8,6 @@
           "distDir": "build"
         }
       }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/build/server.js"
-      }
     ]
   }
   
